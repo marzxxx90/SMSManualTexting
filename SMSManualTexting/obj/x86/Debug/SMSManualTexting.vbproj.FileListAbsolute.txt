@@ -1,0 +1,17 @@
+C:\Users\MISLamion\Documents\Visual Studio 2010\Projects\SMSManualTexting\SMSManualTexting\bin\Debug\IS3NDY0U.GDB
+C:\Users\MISLamion\Documents\Visual Studio 2010\Projects\SMSManualTexting\SMSManualTexting\bin\Debug\SMSManualTexting.exe
+C:\Users\MISLamion\Documents\Visual Studio 2010\Projects\SMSManualTexting\SMSManualTexting\bin\Debug\SMSManualTexting.pdb
+C:\Users\MISLamion\Documents\Visual Studio 2010\Projects\SMSManualTexting\SMSManualTexting\bin\Debug\SMSManualTexting.xml
+C:\Users\MISLamion\Documents\Visual Studio 2010\Projects\SMSManualTexting\SMSManualTexting\bin\Debug\DeathCodez.dll
+C:\Users\MISLamion\Documents\Visual Studio 2010\Projects\SMSManualTexting\SMSManualTexting\obj\x86\Debug\SMSManualTexting.frmMain.resources
+C:\Users\MISLamion\Documents\Visual Studio 2010\Projects\SMSManualTexting\SMSManualTexting\obj\x86\Debug\SMSManualTexting.frmSettings.resources
+C:\Users\MISLamion\Documents\Visual Studio 2010\Projects\SMSManualTexting\SMSManualTexting\obj\x86\Debug\SMSManualTexting.Resources.resources
+C:\Users\MISLamion\Documents\Visual Studio 2010\Projects\SMSManualTexting\SMSManualTexting\obj\x86\Debug\SMSManualTexting.frmReport.resources
+C:\Users\MISLamion\Documents\Visual Studio 2010\Projects\SMSManualTexting\SMSManualTexting\obj\x86\Debug\SMSManualTexting.vbproj.GenerateResource.Cache
+C:\Users\MISLamion\Documents\Visual Studio 2010\Projects\SMSManualTexting\SMSManualTexting\obj\x86\Debug\SMSManualTexting.exe
+C:\Users\MISLamion\Documents\Visual Studio 2010\Projects\SMSManualTexting\SMSManualTexting\obj\x86\Debug\SMSManualTexting.xml
+C:\Users\MISLamion\Documents\Visual Studio 2010\Projects\SMSManualTexting\SMSManualTexting\obj\x86\Debug\SMSManualTexting.pdb
+C:\Users\MISLamion\Documents\Visual Studio 2010\Projects\SMSManualTexting\SMSManualTexting\obj\x86\Debug\SMSManualTexting.frmSMS.resources
+C:\Users\MISLamion\Documents\Visual Studio 2010\Projects\SMSManualTexting\SMSManualTexting\obj\x86\Debug\RdlCompile.cache
+C:\Users\MISLamion\Documents\Visual Studio 2010\Projects\SMSManualTexting\SMSManualTexting\obj\x86\Debug\RdlCompile.compiled
+C:\Users\MISLamion\Documents\Visual Studio 2010\Projects\SMSManualTexting\SMSManualTexting\bin\Debug\Reports\rpt_SMS.rdlc
