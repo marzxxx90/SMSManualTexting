@@ -109,9 +109,10 @@
 
         For Each itm As ListViewItem In lvSms.SelectedItems
             If mod_system.validate_cp(itm.SubItems(2).Text).Contains("INV") Then
-                If Not MsgBox("Do you want to POST?", MsgBoxStyle.YesNo + MsgBoxStyle.Information + vbDefaultButton2, "POSTING...") = vbYes Then
-                    Exit Sub
-                End If
+                MsgBox("Please Check The Number", MsgBoxStyle.Information, "Information") : Exit Sub
+                'If Not MsgBox("Do you want to POST?", MsgBoxStyle.YesNo + MsgBoxStyle.Information + vbDefaultButton2, "POSTING...") = vbYes Then
+                '    Exit Sub
+                'End If
             End If
             For Each lv As ListViewItem In lvSegList.Items
                 If itm.Text = lv.Text Then Exit Sub
@@ -128,5 +129,16 @@
     Private Sub MonthlyToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MonthlyToolStripMenuItem.Click
         frmSMS.FormType = frmSMS.ReportTypes.Monthly
         frmSMS.Show()
+    End Sub
+
+    Private Sub lvSegList_KeyDown(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles lvSegList.KeyDown
+        If lvSegList.SelectedItems.Count = 0 Then Exit Sub
+
+        If e.KeyCode = Keys.Delete Then
+            For Each itm As ListViewItem In lvSegList.SelectedItems
+                lvSegList.Items.Remove(itm)
+            Next
+
+        End If
     End Sub
 End Class

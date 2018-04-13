@@ -22,8 +22,8 @@ Partial Class frmMain
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim ListViewItem13 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem(New String() {"001", "Hoo Jun Maa", "123456789"}, -1)
-        Dim ListViewItem14 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem(New String() {"0002", "Sam Apple", "0912345679"}, -1)
+        Dim ListViewItem3 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem(New String() {"001", "Hoo Jun Maa", "123456789"}, -1)
+        Dim ListViewItem4 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem(New String() {"0002", "Sam Apple", "0912345679"}, -1)
         Me.lvSms = New System.Windows.Forms.ListView()
         Me.ColumnHeader1 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.ColumnHeader2 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
@@ -45,8 +45,8 @@ Partial Class frmMain
         Me.msMenu = New System.Windows.Forms.MenuStrip()
         Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
-        Me.ReportToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SettingsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ReportToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.DailyToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MonthlyToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.GroupBox1.SuspendLayout()
@@ -61,8 +61,8 @@ Partial Class frmMain
         Me.lvSms.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader1, Me.ColumnHeader2, Me.ColumnHeader3})
         Me.lvSms.FullRowSelect = True
         Me.lvSms.GridLines = True
-        ListViewItem13.StateImageIndex = 0
-        Me.lvSms.Items.AddRange(New System.Windows.Forms.ListViewItem() {ListViewItem13})
+        ListViewItem3.StateImageIndex = 0
+        Me.lvSms.Items.AddRange(New System.Windows.Forms.ListViewItem() {ListViewItem3})
         Me.lvSms.Location = New System.Drawing.Point(3, 6)
         Me.lvSms.Name = "lvSms"
         Me.lvSms.Size = New System.Drawing.Size(528, 350)
@@ -91,7 +91,7 @@ Partial Class frmMain
         Me.btnSave.Name = "btnSave"
         Me.btnSave.Size = New System.Drawing.Size(75, 23)
         Me.btnSave.TabIndex = 1
-        Me.btnSave.Text = "&OK"
+        Me.btnSave.Text = "&Save"
         Me.btnSave.UseVisualStyleBackColor = True
         '
         'chkAll
@@ -146,8 +146,8 @@ Partial Class frmMain
         Me.lvSegList.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader4, Me.ColumnHeader5, Me.ColumnHeader6})
         Me.lvSegList.FullRowSelect = True
         Me.lvSegList.GridLines = True
-        ListViewItem14.StateImageIndex = 0
-        Me.lvSegList.Items.AddRange(New System.Windows.Forms.ListViewItem() {ListViewItem14})
+        ListViewItem4.StateImageIndex = 0
+        Me.lvSegList.Items.AddRange(New System.Windows.Forms.ListViewItem() {ListViewItem4})
         Me.lvSegList.Location = New System.Drawing.Point(3, 19)
         Me.lvSegList.Name = "lvSegList"
         Me.lvSegList.Size = New System.Drawing.Size(528, 337)
@@ -198,7 +198,7 @@ Partial Class frmMain
         Me.btnMove.Name = "btnMove"
         Me.btnMove.Size = New System.Drawing.Size(75, 23)
         Me.btnMove.TabIndex = 2
-        Me.btnMove.Text = "&OK"
+        Me.btnMove.Text = "&Move"
         Me.btnMove.UseVisualStyleBackColor = True
         '
         'TabPage2
@@ -234,7 +234,13 @@ Partial Class frmMain
         'ToolStripSeparator1
         '
         Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
-        Me.ToolStripSeparator1.Size = New System.Drawing.Size(149, 6)
+        Me.ToolStripSeparator1.Size = New System.Drawing.Size(113, 6)
+        '
+        'SettingsToolStripMenuItem
+        '
+        Me.SettingsToolStripMenuItem.Name = "SettingsToolStripMenuItem"
+        Me.SettingsToolStripMenuItem.Size = New System.Drawing.Size(116, 22)
+        Me.SettingsToolStripMenuItem.Text = "&Settings"
         '
         'ReportToolStripMenuItem
         '
@@ -243,22 +249,16 @@ Partial Class frmMain
         Me.ReportToolStripMenuItem.Size = New System.Drawing.Size(54, 20)
         Me.ReportToolStripMenuItem.Text = "&Report"
         '
-        'SettingsToolStripMenuItem
-        '
-        Me.SettingsToolStripMenuItem.Name = "SettingsToolStripMenuItem"
-        Me.SettingsToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.SettingsToolStripMenuItem.Text = "&Settings"
-        '
         'DailyToolStripMenuItem
         '
         Me.DailyToolStripMenuItem.Name = "DailyToolStripMenuItem"
-        Me.DailyToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.DailyToolStripMenuItem.Size = New System.Drawing.Size(119, 22)
         Me.DailyToolStripMenuItem.Text = "&Daily"
         '
         'MonthlyToolStripMenuItem
         '
         Me.MonthlyToolStripMenuItem.Name = "MonthlyToolStripMenuItem"
-        Me.MonthlyToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.MonthlyToolStripMenuItem.Size = New System.Drawing.Size(119, 22)
         Me.MonthlyToolStripMenuItem.Text = "&Monthly"
         '
         'frmMain
