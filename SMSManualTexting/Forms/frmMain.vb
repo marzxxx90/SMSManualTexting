@@ -102,6 +102,7 @@
         End Try
 
         MsgBox("Successfully Saved!", MsgBoxStyle.Information, "System Info")
+        lvSegList.Items.Clear()
     End Sub
 
     Private Sub btnMove_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnMove.Click
