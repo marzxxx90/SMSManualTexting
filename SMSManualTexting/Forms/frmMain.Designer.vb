@@ -22,8 +22,9 @@ Partial Class frmMain
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim ListViewItem3 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem(New String() {"001", "Hoo Jun Maa", "123456789"}, -1)
-        Dim ListViewItem4 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem(New String() {"0002", "Sam Apple", "0912345679"}, -1)
+        Dim ListViewItem1 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem(New String() {"001", "Hoo Jun Maa", "123456789"}, -1)
+        Dim ListViewItem2 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem(New String() {"0002", "Sam Apple", "0912345679"}, -1)
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmMain))
         Me.lvSms = New System.Windows.Forms.ListView()
         Me.ColumnHeader1 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.ColumnHeader2 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
@@ -61,8 +62,8 @@ Partial Class frmMain
         Me.lvSms.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader1, Me.ColumnHeader2, Me.ColumnHeader3})
         Me.lvSms.FullRowSelect = True
         Me.lvSms.GridLines = True
-        ListViewItem3.StateImageIndex = 0
-        Me.lvSms.Items.AddRange(New System.Windows.Forms.ListViewItem() {ListViewItem3})
+        ListViewItem1.StateImageIndex = 0
+        Me.lvSms.Items.AddRange(New System.Windows.Forms.ListViewItem() {ListViewItem1})
         Me.lvSms.Location = New System.Drawing.Point(3, 6)
         Me.lvSms.Name = "lvSms"
         Me.lvSms.Size = New System.Drawing.Size(528, 350)
@@ -146,8 +147,8 @@ Partial Class frmMain
         Me.lvSegList.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader4, Me.ColumnHeader5, Me.ColumnHeader6})
         Me.lvSegList.FullRowSelect = True
         Me.lvSegList.GridLines = True
-        ListViewItem4.StateImageIndex = 0
-        Me.lvSegList.Items.AddRange(New System.Windows.Forms.ListViewItem() {ListViewItem4})
+        ListViewItem2.StateImageIndex = 0
+        Me.lvSegList.Items.AddRange(New System.Windows.Forms.ListViewItem() {ListViewItem2})
         Me.lvSegList.Location = New System.Drawing.Point(3, 19)
         Me.lvSegList.Name = "lvSegList"
         Me.lvSegList.Size = New System.Drawing.Size(528, 337)
@@ -269,6 +270,7 @@ Partial Class frmMain
         Me.Controls.Add(Me.msMenu)
         Me.Controls.Add(Me.TabControl1)
         Me.Controls.Add(Me.GroupBox1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "frmMain"

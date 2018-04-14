@@ -102,7 +102,10 @@
         End Try
 
         MsgBox("Successfully Saved!", MsgBoxStyle.Information, "System Info")
-        lvSegList.Items.Clear()
+
+        For Each itm As ListViewItem In lvSegList.SelectedItems
+            lvSegList.Items.Remove(itm)
+        Next
     End Sub
 
     Private Sub btnMove_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnMove.Click
@@ -141,5 +144,9 @@
             Next
 
         End If
+    End Sub
+
+    Private Sub lvSms_KeyPress(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles lvSms.KeyPress
+        If isEnter(e) Then btnMove.PerformClick()
     End Sub
 End Class
