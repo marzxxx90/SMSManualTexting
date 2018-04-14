@@ -103,7 +103,7 @@
 
         MsgBox("Successfully Saved!", MsgBoxStyle.Information, "System Info")
 
-        For Each itm As ListViewItem In lvSegList.SelectedItems
+        For Each itm As ListViewItem In lvSegList.CheckedItems
             lvSegList.Items.Remove(itm)
         Next
     End Sub
