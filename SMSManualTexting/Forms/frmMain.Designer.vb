@@ -50,6 +50,8 @@ Partial Class frmMain
         Me.ReportToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.DailyToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MonthlyToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.lblCount = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
@@ -204,6 +206,8 @@ Partial Class frmMain
         '
         'TabPage2
         '
+        Me.TabPage2.Controls.Add(Me.Label2)
+        Me.TabPage2.Controls.Add(Me.lblCount)
         Me.TabPage2.Controls.Add(Me.lvSegList)
         Me.TabPage2.Controls.Add(Me.Label1)
         Me.TabPage2.Controls.Add(Me.btnSave)
@@ -262,6 +266,24 @@ Partial Class frmMain
         Me.MonthlyToolStripMenuItem.Size = New System.Drawing.Size(119, 22)
         Me.MonthlyToolStripMenuItem.Text = "&Monthly"
         '
+        'lblCount
+        '
+        Me.lblCount.AutoSize = True
+        Me.lblCount.Location = New System.Drawing.Point(158, 369)
+        Me.lblCount.Name = "lblCount"
+        Me.lblCount.Size = New System.Drawing.Size(13, 13)
+        Me.lblCount.TabIndex = 8
+        Me.lblCount.Text = "0"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(83, 369)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(69, 13)
+        Me.Label2.TabIndex = 16
+        Me.Label2.Text = "Check Count"
+        '
         'frmMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -312,5 +334,7 @@ Partial Class frmMain
     Friend WithEvents SettingsToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents DailyToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents MonthlyToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents lblCount As System.Windows.Forms.Label
+    Friend WithEvents Label2 As System.Windows.Forms.Label
 
 End Class

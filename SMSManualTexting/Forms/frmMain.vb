@@ -74,6 +74,7 @@
         For Each lv As ListViewItem In lvSegList.Items
             lv.Checked = chkAll.Checked
         Next
+        lblCount.Text = lvSegList.CheckedItems.Count
     End Sub
 
     Private Sub btnSave_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnSave.Click
@@ -148,5 +149,13 @@
 
     Private Sub lvSms_KeyPress(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles lvSms.KeyPress
         If isEnter(e) Then btnMove.PerformClick()
+    End Sub
+
+    Private Sub lvSegList_ItemCheck(ByVal sender As System.Object, ByVal e As System.Windows.Forms.ItemCheckEventArgs) Handles lvSegList.ItemCheck
+        If e.NewValue.ToString = "Checked" Then
+            lblCount.Text += 1
+        Else
+            lblCount.Text -= 1
+        End If
     End Sub
 End Class
